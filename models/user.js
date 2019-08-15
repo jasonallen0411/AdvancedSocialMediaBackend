@@ -5,6 +5,11 @@ const { ObjectId } = mongoose.Schema;
 
 const userSchema = new mongoose.Schema({
 
+    resetPasswordLink: {
+        data: String,
+        default: ""
+    },
+
     name: {
         type: String,
         trim: true,
